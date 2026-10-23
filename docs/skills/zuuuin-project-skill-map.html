@@ -1,0 +1,31 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Mapear projetos e necessidades · Zuuuin Skills 0.1.1</title><link rel="stylesheet" href="../../site-style.css"><link rel="alternate" type="text/markdown" href="zuuuin-project-skill-map.md"><link rel="describedby" href="../../llms.txt"><link rel="canonical" href="https://enayzuin.github.io/zuuuin-skills/docs/skills/zuuuin-project-skill-map.html"></head><body><main><header><p>Zuuuin Skills 0.1.1 · runtime 0.1.1 · prévia local</p><nav aria-label="Navegação"><a href="../../index.html">Início</a><a href="../index.html">Skills</a><a href="../installation.html">Instalação</a><a href="../site.html">Site e limites</a><a href="../../LICENSE-STATUS.html">Direitos</a></nav></header><h1 id="mapear-projetos-e-necessidades">Mapear projetos e necessidades</h1>
+<p>Transformar fontes autorizadas em projetos reconhecíveis e necessidades descritas por resultados, sem preencher lacunas a partir do nome.</p>
+<p>Coleção: engine. Skill pública `3053093f-1185-4d2e-b25e-2befc4435056`; revisão pública `bd123fb8-238a-451f-9ef4-13e3d341adc6`. Esta entrega reúne oito skills engine e nenhuma implementação de skill de domínio.</p>
+<h2 id="quando-usar">Quando usar</h2>
+<p>Use antes de escolher skills quando o trabalho, as fontes, os critérios ou a cobertura ainda precisam ser explicitados.</p>
+<h2 id="quando-não-usar">Quando não usar</h2>
+<p>Não implemente backlog, infira requisitos por nomes ou escolha uma skill vencedora com este mapeamento.</p>
+<h2 id="entradas-e-resultado">Entradas e resultado</h2>
+<p>A entrada contém sources autorizadas, estado de paginação e projetos com canonical_key. Necessidades informam entrada, resultado desejado, critérios, restrições e desconhecidos. A saída preserva IDs, referências, conflitos, lacunas e cobertura; complete só é verdadeiro quando todas as fontes estão completas e sem páginas restantes.</p>
+<h2 id="objetos-e-capacidade">Objetos e capacidade</h2>
+<p>Capacidade: **Levantar projetos e necessidades** — `23f6f714-9ca8-40c4-8c2b-85432376c4d7`. Transformar fontes autorizadas em identidades, necessidades por resultado e cobertura explícita.</p>
+<table><thead><tr><th>Objeto</th><th>ID público</th></tr></thead><tbody>
+<tr><td>Contexto de trabalho</td><td>`f7aea95d-d562-40fb-b875-8676976869b7`</td></tr>
+<tr><td>Evidência</td><td>`9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c`</td></tr>
+</tbody></table>
+<p>Os nomes, IDs e relações deste recorte estão no <a href="../../catalog/model.json">modelo público</a>; a revisão e os hashes estão no <a href="../../catalog/skills.json">catálogo de skills</a>. A associação conceitual não prova cobertura operacional dos objetos.</p>
+<h2 id="dependências-e-revisão">Dependências e revisão</h2>
+<p>Runtime compartilhado **0.1.1**, entregue separadamente no <a href="../../dist/zuuuin_engine-0.1.1-py3-none-any.whl">wheel local</a>. Requer Python &gt;=3.10 e POSIX com fcntl e O_NOFOLLOW; não possui dependências Python externas. Copiar só a pasta da skill não instala o runtime. Se faltar, declare dependency_missing e confira a <a href="../installation.html">instalação</a>, sem buscar pacote homônimo ou instalar globalmente.</p>
+<p>Consulte as <a href="../../skills/zuuuin-project-skill-map/SKILL.html">instruções da skill</a> e a <a href="../../skills/zuuuin-project-skill-map/references/runtime.html">referência de runtime</a>. A revisão pública identifica o conteúdo da skill; 0.1.1 é a versão separada do motor.</p>
+<h2 id="exemplo-sintético">Exemplo sintético</h2>
+<p>A entrada demonstra uma fonte completa, um projeto fictício e um requisito observável. O fragmento esperado exige mapped, cobertura completa, um projeto observado e ausência de lacunas/conflitos. Frequência e prioridade desconhecidas continuam null.</p>
+<p>Entrada: <a href="../../examples/project-map.request.json">project-map.request.json</a>. Fragmento esperado: <a href="../../examples/project-map.expected.json">project-map.expected.json</a>. Os fragmentos fixam somente campos estáveis; preserve os demais campos da resposta e não compare IDs/horários gerados como se fossem constantes.</p>
+<p>Conclua a instalação e use um perfil privado novo conforme o <a href="../usage.html">guia de uso</a>. Copie o pedido demonstrativo para private/requests do perfil; escolha uma saída nova em private/outputs. Não grave resultados nesta entrega.</p>
+<p>Partindo da raiz da entrega, com os destinos irmãos indicados no guia:</p>
+<pre><code>cp examples/project-map.request.json ../zuuuin-local-profile/private/requests/project-map.request.json
+../zuuuin-runtime-env/bin/python -I -B -m zuuuin_engine project-map --request ../zuuuin-local-profile/private/requests/project-map.request.json --output ../zuuuin-local-profile/private/outputs/project-map.result.json --private-root ../zuuuin-local-profile/private</code></pre>
+<p>O CLI recusa saída existente. Para outra observação, use um nome novo e preserve a anterior. Em caso de recusa, confira dependências, dados e fronteiras do perfil antes de tentar novamente.</p>
+<h2 id="evidência-disponível-e-limites">Evidência disponível e limites</h2>
+<p>A evidência disponível limita-se a observações locais e sintéticas da revisão e do runtime em laboratório. Isso não comprova eficácia em produção, ativação autônoma pelo cliente, adoção ou ganho de produtividade. Estes arquivos de exemplo são contratos demonstrativos; sua presença não é um recibo de execução.</p>
+<p>A consolidação depende da identidade canônica e dos fatos fornecidos. Fonte incompleta ou erro não prova ausência. O helper não lê contas nem interpreta sozinho novas fontes.</p>
+<p>Maturidade: experimental. Conteúdo próprio sob <a href="../../LICENSE">MIT</a>, com **enayzuin** como titular indicado; veja o <a href="../../LICENSE-STATUS.html">escopo da licença</a>. A licença não concede acesso a dados ou contas nem autoriza efeitos externos de uma execução. Mantenha perfis, políticas, entradas reais, resultados e registros privados fora da entrega.</p><footer>Conteúdo próprio de enayzuin sob MIT. Prévia local com indexação desabilitada. Nenhum envio ou hospedagem foi executado por este gerador.</footer></main></body></html>

@@ -1,0 +1,42 @@
+# Zuuuin Skills
+
+> Zuuuin Skills 0.1.1: oito skills engine, runtime separado 0.1.1 e zero implementações de skills de domínio; conteúdo próprio de enayzuin sob MIT.
+
+Evidência apenas local e sintética; leitura de documentação não instala, recarrega ou ativa skills e não comprova eficácia em produção ou ganho comparativo.
+
+Os links locais são relativos a este arquivo. O endereço selecionado da documentação é https://enayzuin.github.io/zuuuin-skills/. A resolução no destino e o comportamento de cada consumidor precisam de verificação própria; este arquivo não comprova hospedagem ou listagem.
+
+## Começar
+
+- [Visão geral](README.md): Escopo, escolha de skill e limites.
+- [Índice navegável](docs/index.md): Grupos, capacidades e revisões públicas.
+- [Instalação](docs/installation.md): Runtime separado e perfil local novo.
+- [Uso](docs/usage.md): Pedidos explícitos e saídas privadas.
+- [Exemplos sintéticos](examples/README.md): Entradas e fragmentos esperados.
+
+## Descoberta e seleção
+
+- [zuuuin-project-skill-map](docs/skills/zuuuin-project-skill-map.md): Mapear projetos e necessidades a partir de fontes autorizadas, quando for preciso compreender o trabalho antes de selecionar skills.
+- [zuuuin-skill-catalog](docs/skills/zuuuin-skill-catalog.md): Inventariar raízes de skills explicitamente autorizadas e aplicar um modelo recebido, preservando instalações e revisões.
+- [zuuuin-skill-compare](docs/skills/zuuuin-skill-compare.md): Comparar a skill local e candidatas elegíveis para uma necessidade e contexto concretos, mostrando evidências, ganhos, perdas e incerteza.
+- [zuuuin-skill-router](docs/skills/zuuuin-skill-router.md): Relacionar uma tarefa a necessidades e capacidades mapeadas e selecionar revisões já aprovadas no contexto correto, encaminhando lacunas para comparação.
+
+## Avaliação e evolução
+
+- [zuuuin-skill-author](docs/skills/zuuuin-skill-author.md): Extrair de evidências autorizadas um método reutilizável e preparar uma candidata privada com contratos, classificação recebida e casos de teste.
+- [zuuuin-skill-evaluate](docs/skills/zuuuin-skill-evaluate.md): Avaliar ativação e resultados observados de uma revisão de skill com casos e critérios prévios, registrando limitações e propostas de melhoria.
+
+## Auditoria e publicação
+
+- [zuuuin-publication-audit](docs/skills/zuuuin-publication-audit.md): Auditar um pacote exato e seu histórico de saída antes da exposição, combinando verificações automatizadas e revisão contextual independente.
+- [zuuuin-skill-publish](docs/skills/zuuuin-skill-publish.md): Preparar ou publicar somente um pacote auditado e imutável, com destino e autorização específicos conferidos no controle privado.
+
+## Optional
+
+- [Contribuições](CONTRIBUTING.md): Fluxo proposto e situação dos canais.
+- [Segurança](SECURITY.md): Relato privado saneado, canais e limites.
+- [Feedback](FEEDBACK.md): Estrutura para relatos e destino selecionado.
+- [Histórico](CHANGELOG.md): Conteúdo da candidata, sem anúncio de lançamento.
+- [Licença MIT](LICENSE): Termos do conteúdo próprio de enayzuin.
+- [Escopo da licença](LICENSE-STATUS.md): Titularidade indicada e limites para terceiros.
+- [Entrada em inglês](README.en.md): Apresentação internacional; instruções permanecem em português.

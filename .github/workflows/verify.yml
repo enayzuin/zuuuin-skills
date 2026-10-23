@@ -1,0 +1,28 @@
+name: Verify local candidate
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.14'
+      - name: Validate formats, links and generated indexes
+        run: python -I -B tools/verify_delivery.py
+      - name: Exercise synthetic helpers with offline local wheel
+        shell: bash
+        run: |
+          python -I -B -m venv "$RUNNER_TEMP/zuuuin-runtime-env"
+          "$RUNNER_TEMP/zuuuin-runtime-env/bin/python" -I -B -m pip install --no-index --no-deps --disable-pip-version-check dist/zuuuin_engine-0.1.1-py3-none-any.whl
+          "$RUNNER_TEMP/zuuuin-runtime-env/bin/python" -I -B tools/verify_delivery.py --examples

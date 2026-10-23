@@ -1,0 +1,68 @@
+{
+  "skills": [
+    {
+      "name": "zuuuin-project-skill-map",
+      "description": "Mapear projetos e necessidades a partir de fontes autorizadas, quando for preciso compreender o trabalho antes de selecionar skills.",
+      "files": [
+        "SKILL.md",
+        "references/runtime.md"
+      ]
+    },
+    {
+      "name": "zuuuin-publication-audit",
+      "description": "Auditar um pacote exato e seu histórico de saída antes da exposição, combinando verificações automatizadas e revisão contextual independente.",
+      "files": [
+        "SKILL.md",
+        "references/runtime.md"
+      ]
+    },
+    {
+      "name": "zuuuin-skill-author",
+      "description": "Extrair de evidências autorizadas um método reutilizável e preparar uma candidata privada com contratos, classificação recebida e casos de teste.",
+      "files": [
+        "SKILL.md",
+        "references/runtime.md"
+      ]
+    },
+    {
+      "name": "zuuuin-skill-catalog",
+      "description": "Inventariar raízes de skills explicitamente autorizadas e aplicar um modelo recebido, preservando instalações e revisões.",
+      "files": [
+        "SKILL.md",
+        "references/runtime.md"
+      ]
+    },
+    {
+      "name": "zuuuin-skill-compare",
+      "description": "Comparar a skill local e candidatas elegíveis para uma necessidade e contexto concretos, mostrando evidências, ganhos, perdas e incerteza.",
+      "files": [
+        "SKILL.md",
+        "references/runtime.md"
+      ]
+    },
+    {
+      "name": "zuuuin-skill-evaluate",
+      "description": "Avaliar ativação e resultados observados de uma revisão de skill com casos e critérios prévios, registrando limitações e propostas de melhoria.",
+      "files": [
+        "SKILL.md",
+        "references/runtime.md"
+      ]
+    },
+    {
+      "name": "zuuuin-skill-publish",
+      "description": "Preparar ou publicar somente um pacote auditado e imutável, com destino e autorização específicos conferidos no controle privado.",
+      "files": [
+        "SKILL.md",
+        "references/runtime.md"
+      ]
+    },
+    {
+      "name": "zuuuin-skill-router",
+      "description": "Relacionar uma tarefa a necessidades e capacidades mapeadas e selecionar revisões já aprovadas no contexto correto, encaminhando lacunas para comparação.",
+      "files": [
+        "SKILL.md",
+        "references/runtime.md"
+      ]
+    }
+  ]
+}

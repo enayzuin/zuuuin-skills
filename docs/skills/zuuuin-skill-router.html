@@ -1,0 +1,33 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Selecionar uma capacidade pertinente · Zuuuin Skills 0.1.1</title><link rel="stylesheet" href="../../site-style.css"><link rel="alternate" type="text/markdown" href="zuuuin-skill-router.md"><link rel="describedby" href="../../llms.txt"><link rel="canonical" href="https://enayzuin.github.io/zuuuin-skills/docs/skills/zuuuin-skill-router.html"></head><body><main><header><p>Zuuuin Skills 0.1.1 · runtime 0.1.1 · prévia local</p><nav aria-label="Navegação"><a href="../../index.html">Início</a><a href="../index.html">Skills</a><a href="../installation.html">Instalação</a><a href="../site.html">Site e limites</a><a href="../../LICENSE-STATUS.html">Direitos</a></nav></header><h1 id="selecionar-uma-capacidade-pertinente">Selecionar uma capacidade pertinente</h1>
+<p>Relacionar uma tarefa ao mapa recebido e a revisões aprovadas no contexto correto, sem instalar, criar ou iniciar descobertas sem vínculo.</p>
+<p>Coleção: engine. Skill pública `836f06da-a10a-46a2-b5d2-bdbc4d78cc7e`; revisão pública `6bdc643d-0e55-4e62-8224-d67e19405c78`. Esta entrega reúne oito skills engine e nenhuma implementação de skill de domínio.</p>
+<h2 id="quando-usar">Quando usar</h2>
+<p>Use em tarefa relacionada a skills quando context_key, need_id e capability_ids estiverem resolvidos por evidência confiável, ou quando o mapa autorizado disponível puder resolver a lacuna.</p>
+<h2 id="quando-não-usar">Quando não usar</h2>
+<p>Não use como novo método de desenvolvimento, catálogo global a cada mensagem ou autorização para instalar, criar ou publicar. Conversa fora do escopo não inicia descoberta.</p>
+<h2 id="entradas-e-resultado">Entradas e resultado</h2>
+<p>O pedido pode informar task, context_key, need_id, capability_ids e identidades de sessão/tarefa/evento. Catálogo, ferramentas, decisões e deduplicação precisam pertencer ao contexto. Um vínculo já resolvido não exige outro documento para validá-lo novamente; lacuna não recuperável produz needs_mapping sem recomendar revisão.</p>
+<h2 id="objetos-e-capacidade">Objetos e capacidade</h2>
+<p>Capacidade: **Selecionar capacidade pertinente** — `76ff1fa6-245b-46ac-9594-d765d493f695`. Selecionar implementação pertinente ao contexto e registrar decisão sem reentrada ou adoção ilimitada.</p>
+<table><thead><tr><th>Objeto</th><th>ID público</th></tr></thead><tbody>
+<tr><td>Checkpoint</td><td>`de1a6298-7289-4b82-b0eb-60114eaf943e`</td></tr>
+<tr><td>Contexto de trabalho</td><td>`f7aea95d-d562-40fb-b875-8676976869b7`</td></tr>
+<tr><td>Revisão de skill</td><td>`e952a79d-b827-4446-a339-8e873de2e47a`</td></tr>
+<tr><td>Decisão</td><td>`882a93cf-8d72-4811-9067-d333ab0a5dfd`</td></tr>
+</tbody></table>
+<p>Os nomes, IDs e relações deste recorte estão no <a href="../../catalog/model.json">modelo público</a>; a revisão e os hashes estão no <a href="../../catalog/skills.json">catálogo de skills</a>. A associação conceitual não prova cobertura operacional dos objetos.</p>
+<h2 id="dependências-e-revisão">Dependências e revisão</h2>
+<p>Runtime compartilhado **0.1.1**, entregue separadamente no <a href="../../dist/zuuuin_engine-0.1.1-py3-none-any.whl">wheel local</a>. Requer Python &gt;=3.10 e POSIX com fcntl e O_NOFOLLOW; não possui dependências Python externas. Copiar só a pasta da skill não instala o runtime. Se faltar, declare dependency_missing e confira a <a href="../installation.html">instalação</a>, sem buscar pacote homônimo ou instalar globalmente.</p>
+<p>Consulte as <a href="../../skills/zuuuin-skill-router/SKILL.html">instruções da skill</a> e a <a href="../../skills/zuuuin-skill-router/references/runtime.html">referência de runtime</a>. A revisão pública identifica o conteúdo da skill; 0.1.1 é a versão separada do motor.</p>
+<h2 id="exemplo-sintético">Exemplo sintético</h2>
+<p>A entrada related=false descreve uma conversa fictícia fora de uma tarefa de skills. O fragmento exige out_of_scope, selected vazio, discovery_performed=false e created_skill=false. O exemplo verifica a recusa de reentrada, não seleção contextual ou descoberta em conta real.</p>
+<p>Entrada: <a href="../../examples/router.request.json">router.request.json</a>. Fragmento esperado: <a href="../../examples/router.expected.json">router.expected.json</a>. Os fragmentos fixam somente campos estáveis; preserve os demais campos da resposta e não compare IDs/horários gerados como se fossem constantes.</p>
+<p>Conclua a instalação e use um perfil privado novo conforme o <a href="../usage.html">guia de uso</a>. Copie o pedido demonstrativo para private/requests do perfil; escolha uma saída nova em private/outputs. Não grave resultados nesta entrega.</p>
+<p>Partindo da raiz da entrega, com os destinos irmãos indicados no guia:</p>
+<pre><code>cp examples/router.request.json ../zuuuin-local-profile/private/requests/router.request.json
+../zuuuin-runtime-env/bin/python -I -B -m zuuuin_engine router --request ../zuuuin-local-profile/private/requests/router.request.json --output ../zuuuin-local-profile/private/outputs/router.result.json --private-root ../zuuuin-local-profile/private</code></pre>
+<p>O CLI recusa saída existente. Para outra observação, use um nome novo e preserve a anterior. Em caso de recusa, confira dependências, dados e fronteiras do perfil antes de tentar novamente.</p>
+<h2 id="evidência-disponível-e-limites">Evidência disponível e limites</h2>
+<p>A evidência disponível limita-se a observações locais e sintéticas da revisão e do runtime em laboratório. Isso não comprova eficácia em produção, ativação autônoma pelo cliente, adoção ou ganho de produtividade. Estes arquivos de exemplo são contratos demonstrativos; sua presença não é um recibo de execução.</p>
+<p>Ferramenta disponível e revisão aprovada não resolvem identidade ausente. Busca com erro não significa ausência. Seleção do helper não comprova acionamento autônomo pelo cliente nem autoriza adoção.</p>
+<p>Maturidade: experimental. Conteúdo próprio sob <a href="../../LICENSE">MIT</a>, com **enayzuin** como titular indicado; veja o <a href="../../LICENSE-STATUS.html">escopo da licença</a>. A licença não concede acesso a dados ou contas nem autoriza efeitos externos de uma execução. Mantenha perfis, políticas, entradas reais, resultados e registros privados fora da entrega.</p><footer>Conteúdo próprio de enayzuin sob MIT. Prévia local com indexação desabilitada. Nenhum envio ou hospedagem foi executado por este gerador.</footer></main></body></html>

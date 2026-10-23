@@ -1,0 +1,32 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Descoberta e seleção",
+      "description": "Mapear necessidades, catalogar, comparar e rotear revisões pertinentes.",
+      "skills": [
+        "zuuuin-project-skill-map",
+        "zuuuin-skill-catalog",
+        "zuuuin-skill-compare",
+        "zuuuin-skill-router"
+      ]
+    },
+    {
+      "title": "Avaliação e evolução",
+      "description": "Casos, avaliações e autoria de revisões com evidência.",
+      "skills": [
+        "zuuuin-skill-author",
+        "zuuuin-skill-evaluate"
+      ]
+    },
+    {
+      "title": "Auditoria e publicação",
+      "description": "Pacote exato, direitos, auditoria, autorização e recibo de publicação.",
+      "skills": [
+        "zuuuin-publication-audit",
+        "zuuuin-skill-publish"
+      ]
+    }
+  ]
+}

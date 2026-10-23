@@ -1,0 +1,29 @@
+{
+  "operation": "compare",
+  "status": "inconclusive",
+  "need_id": "ea3f3a82-5cd1-45ec-9519-5f9c102dacd8",
+  "context_key": "synthetic-example:compare-empty:v1",
+  "local": {
+    "revision_id": "7c81c919-1f7b-44b1-b2c7-aafa470d56eb",
+    "eligible": true,
+    "eligibility_flags": {
+      "eligible": true,
+      "mandatory_passed": true
+    },
+    "eligibility_reasons": [],
+    "scores": {
+      "efficacy": null,
+      "fit": null,
+      "integration": null,
+      "efficiency": null,
+      "maintenance": null
+    },
+    "index": null,
+    "comparable": false,
+    "evidence_refs": [],
+    "unknown_reason": "Index unavailable unless all five criteria have comparable execution evidence"
+  },
+  "comparisons": [],
+  "global_replacement": false,
+  "mutation_performed": false
+}

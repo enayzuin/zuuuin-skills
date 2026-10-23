@@ -1,0 +1,743 @@
+{
+  "created_at": "2026-10-23T01:26:23.987937+00:00",
+  "id": "a7ac6f19-c868-4d24-a456-b44c5cf199e9",
+  "limitations": [
+    "Conceptual relationships and declared operations are a selected subset; they do not prove operational coverage of real work.",
+    "Validation is limited to local synthetic observations; production efficacy and autonomous client activation are not established.",
+    "Distribution metadata is not an authorization for external actions; every consuming profile starts without publication approval."
+  ],
+  "revision": 1,
+  "runtime": {
+    "name": "zuuuin-engine",
+    "path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+    "requires": [
+      "Python >=3.10",
+      "POSIX (macOS/Linux) with fcntl and O_NOFOLLOW"
+    ],
+    "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+    "validation_scope": "Observed local synthetic use; broader OS/Python versions and production are not established.",
+    "version": "0.1.1",
+    "license": "MIT",
+    "owner": "enayzuin"
+  },
+  "schema_version": "1.0",
+  "skill_revisions": [
+    {
+      "created_at": "2026-10-23T12:47:49.473167+00:00",
+      "declared_version": null,
+      "id": "bd123fb8-238a-451f-9ef4-13e3d341adc6",
+      "license": "MIT",
+      "owner": "enayzuin",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "skill_id": "3053093f-1185-4d2e-b25e-2befc4435056",
+      "source_files": [
+        {
+          "path": "skills/zuuuin-project-skill-map/SKILL.md",
+          "sha256": "59b274373d3085a2c9c80c77afd23f84019badbaab5f869f1c2646c7013827eb"
+        },
+        {
+          "path": "skills/zuuuin-project-skill-map/references/runtime.md",
+          "sha256": "6b3ac2cd1074661826d9d7ca5963cd34a516bac9a16a1c629a01176ba62cf318"
+        }
+      ],
+      "type": "skill_revision",
+      "unknown_reason": {
+        "declared_version": "No skill-specific semantic version is declared; runtime version is a separate dependency."
+      },
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "created_at": "2026-10-23T12:47:49.473167+00:00",
+      "declared_version": null,
+      "id": "56f2c90d-42ab-4753-9fa2-a216a7353996",
+      "license": "MIT",
+      "owner": "enayzuin",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "skill_id": "c4d06892-9296-45b5-8336-fc34b71f0de7",
+      "source_files": [
+        {
+          "path": "skills/zuuuin-publication-audit/SKILL.md",
+          "sha256": "f2d682ad774639166c0caec782a5cd84bb0cf68660a63f83921273ab1be683c4"
+        },
+        {
+          "path": "skills/zuuuin-publication-audit/references/runtime.md",
+          "sha256": "6b3ac2cd1074661826d9d7ca5963cd34a516bac9a16a1c629a01176ba62cf318"
+        }
+      ],
+      "type": "skill_revision",
+      "unknown_reason": {
+        "declared_version": "No skill-specific semantic version is declared; runtime version is a separate dependency."
+      },
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "created_at": "2026-10-23T12:47:49.473167+00:00",
+      "declared_version": null,
+      "id": "3b7a4127-7e67-4d4b-93a0-83a758ea541e",
+      "license": "MIT",
+      "owner": "enayzuin",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "skill_id": "6061d0a0-5cd3-4118-bcac-5c10f864a449",
+      "source_files": [
+        {
+          "path": "skills/zuuuin-skill-author/SKILL.md",
+          "sha256": "ebfefb1c3341c4ae149fad5c9fb6de3e7e4a5f2556219399fef9f770a79cf76c"
+        },
+        {
+          "path": "skills/zuuuin-skill-author/references/runtime.md",
+          "sha256": "6b3ac2cd1074661826d9d7ca5963cd34a516bac9a16a1c629a01176ba62cf318"
+        }
+      ],
+      "type": "skill_revision",
+      "unknown_reason": {
+        "declared_version": "No skill-specific semantic version is declared; runtime version is a separate dependency."
+      },
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "created_at": "2026-10-23T12:47:49.473167+00:00",
+      "declared_version": null,
+      "id": "487b80d4-1f9d-4cd0-a063-9a8b22518c61",
+      "license": "MIT",
+      "owner": "enayzuin",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "skill_id": "c08b3153-1a28-42bb-bbd0-d5c1731de42c",
+      "source_files": [
+        {
+          "path": "skills/zuuuin-skill-catalog/SKILL.md",
+          "sha256": "6be930f34a1c717c0872596d709765c03923c4e5f0e2a1a903aeed4c904c2888"
+        },
+        {
+          "path": "skills/zuuuin-skill-catalog/references/runtime.md",
+          "sha256": "6b3ac2cd1074661826d9d7ca5963cd34a516bac9a16a1c629a01176ba62cf318"
+        }
+      ],
+      "type": "skill_revision",
+      "unknown_reason": {
+        "declared_version": "No skill-specific semantic version is declared; runtime version is a separate dependency."
+      },
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "created_at": "2026-10-23T12:47:49.473167+00:00",
+      "declared_version": null,
+      "id": "4b742972-7df1-4c6b-8145-b89bfde14991",
+      "license": "MIT",
+      "owner": "enayzuin",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "skill_id": "7362fbbe-51c8-4753-9219-06342aecc5f1",
+      "source_files": [
+        {
+          "path": "skills/zuuuin-skill-compare/SKILL.md",
+          "sha256": "91863227671f31a1fbc139456e958a692afd743bacf5fe14f9e0451aa943b586"
+        },
+        {
+          "path": "skills/zuuuin-skill-compare/references/runtime.md",
+          "sha256": "6b3ac2cd1074661826d9d7ca5963cd34a516bac9a16a1c629a01176ba62cf318"
+        }
+      ],
+      "type": "skill_revision",
+      "unknown_reason": {
+        "declared_version": "No skill-specific semantic version is declared; runtime version is a separate dependency."
+      },
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "created_at": "2026-10-23T12:47:49.473167+00:00",
+      "declared_version": null,
+      "id": "80651c06-52f7-4bb2-b4fe-9e591228b2cb",
+      "license": "MIT",
+      "owner": "enayzuin",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "skill_id": "5d552bc8-026b-47a0-ace9-d9171da95d9a",
+      "source_files": [
+        {
+          "path": "skills/zuuuin-skill-evaluate/SKILL.md",
+          "sha256": "1eba9ab55d2b579cbc9b69599417526355a8c0c5fc9cc66093b58af297367042"
+        },
+        {
+          "path": "skills/zuuuin-skill-evaluate/references/runtime.md",
+          "sha256": "6b3ac2cd1074661826d9d7ca5963cd34a516bac9a16a1c629a01176ba62cf318"
+        }
+      ],
+      "type": "skill_revision",
+      "unknown_reason": {
+        "declared_version": "No skill-specific semantic version is declared; runtime version is a separate dependency."
+      },
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "created_at": "2026-10-23T12:47:49.473167+00:00",
+      "declared_version": null,
+      "id": "2f6c07e2-82cb-4e11-b530-d22d6ae65db0",
+      "license": "MIT",
+      "owner": "enayzuin",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "skill_id": "566240cd-ae0f-41ee-8f88-cfa3af0965a9",
+      "source_files": [
+        {
+          "path": "skills/zuuuin-skill-publish/SKILL.md",
+          "sha256": "4365433bc1bed6b6e003a8e6d49ad049f85fc37a187cddeb1beb0718c7efafc7"
+        },
+        {
+          "path": "skills/zuuuin-skill-publish/references/runtime.md",
+          "sha256": "6b3ac2cd1074661826d9d7ca5963cd34a516bac9a16a1c629a01176ba62cf318"
+        }
+      ],
+      "type": "skill_revision",
+      "unknown_reason": {
+        "declared_version": "No skill-specific semantic version is declared; runtime version is a separate dependency."
+      },
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "created_at": "2026-10-23T12:47:49.473167+00:00",
+      "declared_version": null,
+      "id": "6bdc643d-0e55-4e62-8224-d67e19405c78",
+      "license": "MIT",
+      "owner": "enayzuin",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "skill_id": "836f06da-a10a-46a2-b5d2-bdbc4d78cc7e",
+      "source_files": [
+        {
+          "path": "skills/zuuuin-skill-router/SKILL.md",
+          "sha256": "3246c16aa0d22a38877b5bb4b08a7b668552603859a307f162c0536fa0f6b95a"
+        },
+        {
+          "path": "skills/zuuuin-skill-router/references/runtime.md",
+          "sha256": "6b3ac2cd1074661826d9d7ca5963cd34a516bac9a16a1c629a01176ba62cf318"
+        }
+      ],
+      "type": "skill_revision",
+      "unknown_reason": {
+        "declared_version": "No skill-specific semantic version is declared; runtime version is a separate dependency."
+      },
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    }
+  ],
+  "skills": [
+    {
+      "availability": "unknown",
+      "availability_limit": "A package exists and has local synthetic observations; discovery in a consumer client is not established.",
+      "capability_ids": [
+        "23f6f714-9ca8-40c4-8c2b-85432376c4d7"
+      ],
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "current_revision_id": "bd123fb8-238a-451f-9ef4-13e3d341adc6",
+      "dependencies": [
+        {
+          "artifact_path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+          "name": "zuuuin-engine",
+          "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+          "version": "0.1.1"
+        }
+      ],
+      "description": "Mapear projetos e necessidades a partir de fontes autorizadas, quando for preciso compreender o trabalho antes de selecionar skills.",
+      "domain_ids": [
+        "85b0bcbc-7d4f-406f-89d5-52f115cc7afe"
+      ],
+      "id": "3053093f-1185-4d2e-b25e-2befc4435056",
+      "installation": "not_installed",
+      "license": "MIT",
+      "maturity": "experimental",
+      "module_ids": [
+        "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324"
+      ],
+      "name": "zuuuin-project-skill-map",
+      "object_ids": [
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "owner": "enayzuin",
+      "path": "skills/zuuuin-project-skill-map",
+      "publication": "staged",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "slug": "zuuuin-project-skill-map",
+      "type": "skill",
+      "unknown_reason": {},
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "availability": "unknown",
+      "availability_limit": "A package exists and has local synthetic observations; discovery in a consumer client is not established.",
+      "capability_ids": [
+        "99c2045c-ad0b-4a4c-ac22-6532b1df90c3"
+      ],
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "current_revision_id": "56f2c90d-42ab-4753-9fa2-a216a7353996",
+      "dependencies": [
+        {
+          "artifact_path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+          "name": "zuuuin-engine",
+          "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+          "version": "0.1.1"
+        }
+      ],
+      "description": "Auditar um pacote exato e seu histórico de saída antes da exposição, combinando verificações automatizadas e revisão contextual independente.",
+      "domain_ids": [
+        "85b0bcbc-7d4f-406f-89d5-52f115cc7afe"
+      ],
+      "id": "c4d06892-9296-45b5-8336-fc34b71f0de7",
+      "installation": "not_installed",
+      "license": "MIT",
+      "maturity": "experimental",
+      "module_ids": [
+        "3e23af05-2ffe-4ab7-8521-7233a0f2f81e"
+      ],
+      "name": "zuuuin-publication-audit",
+      "object_ids": [
+        "9f2dfa2d-437f-47d8-95ae-360e0dc2344b",
+        "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c",
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+      ],
+      "owner": "enayzuin",
+      "path": "skills/zuuuin-publication-audit",
+      "publication": "staged",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "slug": "zuuuin-publication-audit",
+      "type": "skill",
+      "unknown_reason": {},
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "availability": "unknown",
+      "availability_limit": "A package exists and has local synthetic observations; discovery in a consumer client is not established.",
+      "capability_ids": [
+        "9032b66e-56f1-4a51-bd4b-8e5d5ccccd0d"
+      ],
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "current_revision_id": "3b7a4127-7e67-4d4b-93a0-83a758ea541e",
+      "dependencies": [
+        {
+          "artifact_path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+          "name": "zuuuin-engine",
+          "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+          "version": "0.1.1"
+        }
+      ],
+      "description": "Extrair de evidências autorizadas um método reutilizável e preparar uma candidata privada com contratos, classificação recebida e casos de teste.",
+      "domain_ids": [
+        "85b0bcbc-7d4f-406f-89d5-52f115cc7afe"
+      ],
+      "id": "6061d0a0-5cd3-4118-bcac-5c10f864a449",
+      "installation": "not_installed",
+      "license": "MIT",
+      "maturity": "experimental",
+      "module_ids": [
+        "78c745cf-32f9-40a5-ac80-a323338eaefd"
+      ],
+      "name": "zuuuin-skill-author",
+      "object_ids": [
+        "ab72be05-2d41-4985-875d-60109f84c02e",
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc",
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "owner": "enayzuin",
+      "path": "skills/zuuuin-skill-author",
+      "publication": "staged",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "slug": "zuuuin-skill-author",
+      "type": "skill",
+      "unknown_reason": {},
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "availability": "unknown",
+      "availability_limit": "A package exists and has local synthetic observations; discovery in a consumer client is not established.",
+      "capability_ids": [
+        "c1003b8d-a857-421a-be24-143a4bc297d0"
+      ],
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "current_revision_id": "487b80d4-1f9d-4cd0-a063-9a8b22518c61",
+      "dependencies": [
+        {
+          "artifact_path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+          "name": "zuuuin-engine",
+          "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+          "version": "0.1.1"
+        }
+      ],
+      "description": "Inventariar raízes de skills explicitamente autorizadas e aplicar um modelo recebido, preservando instalações e revisões.",
+      "domain_ids": [
+        "85b0bcbc-7d4f-406f-89d5-52f115cc7afe"
+      ],
+      "id": "c08b3153-1a28-42bb-bbd0-d5c1731de42c",
+      "installation": "not_installed",
+      "license": "MIT",
+      "maturity": "experimental",
+      "module_ids": [
+        "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324"
+      ],
+      "name": "zuuuin-skill-catalog",
+      "object_ids": [
+        "ab72be05-2d41-4985-875d-60109f84c02e",
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c",
+        "0b8b9744-bcf2-4c3d-b4b6-07b35daaa101"
+      ],
+      "owner": "enayzuin",
+      "path": "skills/zuuuin-skill-catalog",
+      "publication": "staged",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "slug": "zuuuin-skill-catalog",
+      "type": "skill",
+      "unknown_reason": {},
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "availability": "unknown",
+      "availability_limit": "A package exists and has local synthetic observations; discovery in a consumer client is not established.",
+      "capability_ids": [
+        "25f3bcff-d07b-43b3-9217-bf6af16b904f"
+      ],
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "current_revision_id": "4b742972-7df1-4c6b-8145-b89bfde14991",
+      "dependencies": [
+        {
+          "artifact_path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+          "name": "zuuuin-engine",
+          "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+          "version": "0.1.1"
+        }
+      ],
+      "description": "Comparar a skill local e candidatas elegíveis para uma necessidade e contexto concretos, mostrando evidências, ganhos, perdas e incerteza.",
+      "domain_ids": [
+        "85b0bcbc-7d4f-406f-89d5-52f115cc7afe"
+      ],
+      "id": "7362fbbe-51c8-4753-9219-06342aecc5f1",
+      "installation": "not_installed",
+      "license": "MIT",
+      "maturity": "experimental",
+      "module_ids": [
+        "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324"
+      ],
+      "name": "zuuuin-skill-compare",
+      "object_ids": [
+        "8cb878cb-6bfb-43ff-90e3-e2348eee474f",
+        "62031be1-a10b-4f87-9033-3c5e4ad2498a",
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c",
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+      ],
+      "owner": "enayzuin",
+      "path": "skills/zuuuin-skill-compare",
+      "publication": "staged",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "slug": "zuuuin-skill-compare",
+      "type": "skill",
+      "unknown_reason": {},
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "availability": "unknown",
+      "availability_limit": "A package exists and has local synthetic observations; discovery in a consumer client is not established.",
+      "capability_ids": [
+        "9c161232-89d9-4995-941e-bc24687ffcb7"
+      ],
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "current_revision_id": "80651c06-52f7-4bb2-b4fe-9e591228b2cb",
+      "dependencies": [
+        {
+          "artifact_path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+          "name": "zuuuin-engine",
+          "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+          "version": "0.1.1"
+        }
+      ],
+      "description": "Avaliar ativação e resultados observados de uma revisão de skill com casos e critérios prévios, registrando limitações e propostas de melhoria.",
+      "domain_ids": [
+        "85b0bcbc-7d4f-406f-89d5-52f115cc7afe"
+      ],
+      "id": "5d552bc8-026b-47a0-ace9-d9171da95d9a",
+      "installation": "not_installed",
+      "license": "MIT",
+      "maturity": "experimental",
+      "module_ids": [
+        "78c745cf-32f9-40a5-ac80-a323338eaefd"
+      ],
+      "name": "zuuuin-skill-evaluate",
+      "object_ids": [
+        "8cb878cb-6bfb-43ff-90e3-e2348eee474f",
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "2e6cd3ac-b8bc-4d39-b1a0-d90a50a7f550",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "owner": "enayzuin",
+      "path": "skills/zuuuin-skill-evaluate",
+      "publication": "staged",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "slug": "zuuuin-skill-evaluate",
+      "type": "skill",
+      "unknown_reason": {},
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "availability": "unknown",
+      "availability_limit": "A package exists and has local synthetic observations; discovery in a consumer client is not established.",
+      "capability_ids": [
+        "e68f24ed-d351-422c-b35b-979485308332"
+      ],
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "current_revision_id": "2f6c07e2-82cb-4e11-b530-d22d6ae65db0",
+      "dependencies": [
+        {
+          "artifact_path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+          "name": "zuuuin-engine",
+          "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+          "version": "0.1.1"
+        }
+      ],
+      "description": "Preparar ou publicar somente um pacote auditado e imutável, com destino e autorização específicos conferidos no controle privado.",
+      "domain_ids": [
+        "85b0bcbc-7d4f-406f-89d5-52f115cc7afe"
+      ],
+      "id": "566240cd-ae0f-41ee-8f88-cfa3af0965a9",
+      "installation": "not_installed",
+      "license": "MIT",
+      "maturity": "experimental",
+      "module_ids": [
+        "3e23af05-2ffe-4ab7-8521-7233a0f2f81e"
+      ],
+      "name": "zuuuin-skill-publish",
+      "object_ids": [
+        "9f2dfa2d-437f-47d8-95ae-360e0dc2344b",
+        "a2bd89f7-2a1e-4653-a4ff-adc07170105c",
+        "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c",
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+      ],
+      "owner": "enayzuin",
+      "path": "skills/zuuuin-skill-publish",
+      "publication": "staged",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "slug": "zuuuin-skill-publish",
+      "type": "skill",
+      "unknown_reason": {},
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    },
+    {
+      "availability": "unknown",
+      "availability_limit": "A package exists and has local synthetic observations; discovery in a consumer client is not established.",
+      "capability_ids": [
+        "76ff1fa6-245b-46ac-9594-d765d493f695"
+      ],
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "current_revision_id": "6bdc643d-0e55-4e62-8224-d67e19405c78",
+      "dependencies": [
+        {
+          "artifact_path": "dist/zuuuin_engine-0.1.1-py3-none-any.whl",
+          "name": "zuuuin-engine",
+          "sha256": "6dbd3a3068bfa7943db782fd1f05eb132ee90a9e6f18040c41693f6fa25de862",
+          "version": "0.1.1"
+        }
+      ],
+      "description": "Relacionar uma tarefa a necessidades e capacidades mapeadas e selecionar revisões já aprovadas no contexto correto, encaminhando lacunas para comparação.",
+      "domain_ids": [
+        "85b0bcbc-7d4f-406f-89d5-52f115cc7afe"
+      ],
+      "id": "836f06da-a10a-46a2-b5d2-bdbc4d78cc7e",
+      "installation": "not_installed",
+      "license": "MIT",
+      "maturity": "experimental",
+      "module_ids": [
+        "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324"
+      ],
+      "name": "zuuuin-skill-router",
+      "object_ids": [
+        "de1a6298-7289-4b82-b0eb-60114eaf943e",
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+      ],
+      "owner": "enayzuin",
+      "path": "skills/zuuuin-skill-router",
+      "publication": "staged",
+      "revision": 1,
+      "runtime_version": "0.1.1",
+      "schema_version": "1.0",
+      "slug": "zuuuin-skill-router",
+      "type": "skill",
+      "unknown_reason": {},
+      "updated_at": "2026-10-23T12:47:49.473167+00:00",
+      "validation": "passed",
+      "validation_scope": {
+        "autonomous_activation_verified": false,
+        "kind": "local_synthetic",
+        "production_validated": false,
+        "runtime_version": "0.1.1"
+      },
+      "visibility": "candidate_public"
+    }
+  ],
+  "type": "public_catalog",
+  "updated_at": "2026-10-23T12:47:49.473167+00:00",
+  "visibility": "candidate_public",
+  "owner": "enayzuin",
+  "license": "MIT",
+  "distribution_version": "0.1.1",
+  "repository_url": "https://github.com/enayzuin/zuuuin-skills",
+  "site_url": "https://enayzuin.github.io/zuuuin-skills/"
+}

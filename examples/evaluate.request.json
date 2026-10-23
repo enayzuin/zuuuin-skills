@@ -1,0 +1,22 @@
+{
+  "revision_id": "cbcf1963-545e-4c6a-bd7e-f9cec7386659",
+  "cases": [
+    {
+      "case_id": "40a14d5f-3334-411e-a5a4-e20c80213002",
+      "executed": true,
+      "evidence_ref": "inline:cases/0/observed_output#synthetic-demonstration-v1",
+      "expected": {
+        "without_skill.result": "synthetic-equal",
+        "with_skill.result": "synthetic-equal"
+      },
+      "observed_output": {
+        "without_skill": {
+          "result": "synthetic-equal"
+        },
+        "with_skill": {
+          "result": "synthetic-equal"
+        }
+      }
+    }
+  ]
+}

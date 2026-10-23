@@ -1,0 +1,10 @@
+{
+  "operation": "project-map",
+  "status": "mapped",
+  "coverage": {
+    "complete": true,
+    "observed_projects": 1
+  },
+  "conflicts": [],
+  "gaps": []
+}

@@ -1,0 +1,792 @@
+{
+  "capabilities": [
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "criteria": [
+        "Paginação e cobertura declaradas",
+        "Não inferir necessidade pelo nome nem executar backlog"
+      ],
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "23f6f714-9ca8-40c4-8c2b-85432376c4d7",
+      "input_objects": [
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "name": "Levantar projetos e necessidades",
+      "output_objects": [
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "primary_module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "revision": 1,
+      "schema_version": "1.0",
+      "secondary_module_ids": [
+        "3918d1c0-217f-48c6-9cb1-761fdb78b8db",
+        "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29"
+      ],
+      "transformation": "Transformar fontes autorizadas em identidades, necessidades por resultado e cobertura explícita.",
+      "type": "capability",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "criteria": [
+        "Revisão/origem/instalação distintas",
+        "Não executar scripts de candidatas por descoberta"
+      ],
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "c1003b8d-a857-421a-be24-143a4bc297d0",
+      "input_objects": [
+        "ab72be05-2d41-4985-875d-60109f84c02e",
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "0b8b9744-bcf2-4c3d-b4b6-07b35daaa101"
+      ],
+      "name": "Catalogar revisões e instalações",
+      "output_objects": [
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "primary_module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "revision": 1,
+      "schema_version": "1.0",
+      "secondary_module_ids": [
+        "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29"
+      ],
+      "transformation": "Registrar acervo e suas revisões/instalações preservando originais e limites de leitura.",
+      "type": "capability",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "criteria": [
+        "Eliminatórios antes da pontuação",
+        "Sem adoção por popularidade ou vantagem não medida"
+      ],
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "25f3bcff-d07b-43b3-9217-bf6af16b904f",
+      "input_objects": [
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "8cb878cb-6bfb-43ff-90e3-e2348eee474f",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "name": "Comparar alternativas por necessidade",
+      "output_objects": [
+        "62031be1-a10b-4f87-9033-3c5e4ad2498a",
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+      ],
+      "primary_module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "revision": 1,
+      "schema_version": "1.0",
+      "secondary_module_ids": [
+        "78c745cf-32f9-40a5-ac80-a323338eaefd"
+      ],
+      "transformation": "Comparar revisões em critérios contextualizados, com ganhos, perdas e confiança.",
+      "type": "capability",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "criteria": [
+        "Somente execução observada conta no denominador",
+        "Ambiente/modelo e limites atribuídos"
+      ],
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "9c161232-89d9-4995-941e-bc24687ffcb7",
+      "input_objects": [
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "8cb878cb-6bfb-43ff-90e3-e2348eee474f",
+        "f7aea95d-d562-40fb-b875-8676976869b7"
+      ],
+      "name": "Avaliar uma revisão por casos",
+      "output_objects": [
+        "2e6cd3ac-b8bc-4d39-b1a0-d90a50a7f550",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "primary_module_id": "78c745cf-32f9-40a5-ac80-a323338eaefd",
+      "revision": 1,
+      "schema_version": "1.0",
+      "secondary_module_ids": [
+        "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29"
+      ],
+      "transformation": "Executar casos autorizados e registrar resultados, métricas e desconhecidos da revisão.",
+      "type": "capability",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "criteria": [
+        "Origem/direitos e limites explícitos",
+        "Arquivo escrito não é validação nem publicação"
+      ],
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "9032b66e-56f1-4a51-bd4b-8e5d5ccccd0d",
+      "input_objects": [
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c",
+        "e952a79d-b827-4446-a339-8e873de2e47a"
+      ],
+      "name": "Criar ou melhorar revisão de skill",
+      "output_objects": [
+        "ab72be05-2d41-4985-875d-60109f84c02e",
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc"
+      ],
+      "primary_module_id": "78c745cf-32f9-40a5-ac80-a323338eaefd",
+      "revision": 1,
+      "schema_version": "1.0",
+      "secondary_module_ids": [
+        "3e23af05-2ffe-4ab7-8521-7233a0f2f81e"
+      ],
+      "transformation": "Transformar lacuna comprovada em candidata privada com contrato e recursos proporcionais.",
+      "type": "capability",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "criteria": [
+        "Allowlist explícita; dados privados recusados",
+        "Parecer vinculado aos bytes; alterações invalidam autorização"
+      ],
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "99c2045c-ad0b-4a4c-ac22-6532b1df90c3",
+      "input_objects": [
+        "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c",
+        "9f2dfa2d-437f-47d8-95ae-360e0dc2344b"
+      ],
+      "name": "Auditar pacote para exposição",
+      "output_objects": [
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c",
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+      ],
+      "primary_module_id": "3e23af05-2ffe-4ab7-8521-7233a0f2f81e",
+      "revision": 1,
+      "schema_version": "1.0",
+      "secondary_module_ids": [
+        "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29"
+      ],
+      "transformation": "Examinar conteúdo, auxiliares, metadados, histórico e artefatos do pacote exato.",
+      "type": "capability",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "e68f24ed-d351-422c-b35b-979485308332",
+      "input_objects": [
+        "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc",
+        "9f2dfa2d-437f-47d8-95ae-360e0dc2344b",
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+      ],
+      "name": "Publicar pacote autorizado",
+      "output_objects": [
+        "a2bd89f7-2a1e-4653-a4ff-adc07170105c",
+        "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+      ],
+      "primary_module_id": "3e23af05-2ffe-4ab7-8521-7233a0f2f81e",
+      "revision": 1,
+      "schema_version": "1.0",
+      "secondary_module_ids": [
+        "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29"
+      ],
+      "transformation": "Expor somente o pacote aprovado e registrar efeito/destino com idempotência e verificação.",
+      "type": "capability",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "criteria": [
+        "Disponibilidade e revisão não presumidas",
+        "Necessidade não exige pesquisar/instalar/publicar a cada mensagem"
+      ],
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "76ff1fa6-245b-46ac-9594-d765d493f695",
+      "input_objects": [
+        "f7aea95d-d562-40fb-b875-8676976869b7",
+        "e952a79d-b827-4446-a339-8e873de2e47a",
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+      ],
+      "name": "Selecionar capacidade pertinente",
+      "output_objects": [
+        "882a93cf-8d72-4811-9067-d333ab0a5dfd",
+        "de1a6298-7289-4b82-b0eb-60114eaf943e"
+      ],
+      "primary_module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "revision": 1,
+      "schema_version": "1.0",
+      "secondary_module_ids": [
+        "3918d1c0-217f-48c6-9cb1-761fdb78b8db"
+      ],
+      "transformation": "Selecionar implementação pertinente ao contexto e registrar decisão sem reentrada ou adoção ilimitada.",
+      "type": "capability",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    }
+  ],
+  "created_at": "2026-10-23T01:26:23.987937+00:00",
+  "domains": [
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Governança de necessidades, acervo, comparação, avaliação, autoria, seleção e publicação de revisões de skills.",
+      "id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "module_ids": [
+        "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+        "78c745cf-32f9-40a5-ac80-a323338eaefd",
+        "3e23af05-2ffe-4ab7-8521-7233a0f2f81e"
+      ],
+      "name": "Motor de skills",
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "domain",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "shared",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Capacidades transversais de recuperação de contexto, proveniência, recibos e limites de atuação.",
+      "id": "b0694ea6-7bcc-420d-85f6-b595fc865aa6",
+      "module_ids": [
+        "3918d1c0-217f-48c6-9cb1-761fdb78b8db",
+        "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29"
+      ],
+      "name": "Contexto, evidência e autorização",
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "domain",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    }
+  ],
+  "id": "96f7f3d6-6fc8-4f56-a6a5-6a75c53528c2",
+  "limitations": [
+    "Conceptual relationships and declared operations are a selected subset; they do not prove operational coverage of real work.",
+    "Validation is limited to local synthetic observations; production efficacy and autonomous client activation are not established.",
+    "Distribution metadata is not an authorization for external actions; every consuming profile starts without publication approval."
+  ],
+  "modules": [
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Mapear necessidades, catalogar, comparar e rotear revisões pertinentes.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "name": "Descoberta e seleção",
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "module",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Casos, avaliações e autoria de revisões com evidência.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "78c745cf-32f9-40a5-ac80-a323338eaefd",
+      "name": "Avaliação e evolução",
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "module",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Pacote exato, direitos, auditoria, autorização e recibo de publicação.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "3e23af05-2ffe-4ab7-8521-7233a0f2f81e",
+      "name": "Auditoria e publicação",
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "module",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "shared",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Recuperar fontes e estado retomável sem depender da narrativa de um chat.",
+      "domain_id": "b0694ea6-7bcc-420d-85f6-b595fc865aa6",
+      "id": "3918d1c0-217f-48c6-9cb1-761fdb78b8db",
+      "name": "Contexto e continuidade",
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "module",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "shared",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Proveniência, autorização e recibos de efeitos observados.",
+      "domain_id": "b0694ea6-7bcc-420d-85f6-b595fc865aa6",
+      "id": "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29",
+      "name": "Evidência e limites de atuação",
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "module",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    }
+  ],
+  "objects": [
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Unidade reutilizável de instruções e recursos que orienta um resultado de trabalho. Sua identidade lógica não é a ferramenta usada, uma revisão específica de conteúdo, uma instalação ou uma execução comprovada.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "ab72be05-2d41-4985-875d-60109f84c02e",
+      "module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "name": "Skill",
+      "relations": [
+        {
+          "relation": "possui_revisao",
+          "target_id": "e952a79d-b827-4446-a339-8e873de2e47a"
+        },
+        {
+          "relation": "é_observada_em",
+          "target_id": "2e6cd3ac-b8bc-4d39-b1a0-d90a50a7f550"
+        },
+        {
+          "relation": "é_pertinente_ao",
+          "target_id": "f7aea95d-d562-40fb-b875-8676976869b7"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Conteúdo determinado de uma skill, identificável por versão, origem e integridade. É a unidade exata submetida a comparação, execução de casos e decisão; evidência de outra revisão não comprova esta revisão.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "e952a79d-b827-4446-a339-8e873de2e47a",
+      "module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "name": "Revisão de skill",
+      "relations": [
+        {
+          "relation": "revisa",
+          "target_id": "ab72be05-2d41-4985-875d-60109f84c02e"
+        },
+        {
+          "relation": "é_instalada_por",
+          "target_id": "0b8b9744-bcf2-4c3d-b4b6-07b35daaa101"
+        },
+        {
+          "relation": "é_executada_em",
+          "target_id": "2e6cd3ac-b8bc-4d39-b1a0-d90a50a7f550"
+        },
+        {
+          "relation": "é_confrontada_em",
+          "target_id": "62031be1-a10b-4f87-9033-3c5e4ad2498a"
+        },
+        {
+          "relation": "integra",
+          "target_id": "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Vínculo observável entre uma revisão específica e um destino com escopo de uso. Presença de arquivos no destino comprova apenas o que foi conferido; não comprova acionamento, execução correta, avaliação ou aceite.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "0b8b9744-bcf2-4c3d-b4b6-07b35daaa101",
+      "module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "name": "Instalação",
+      "relations": [
+        {
+          "relation": "disponibiliza",
+          "target_id": "e952a79d-b827-4446-a339-8e873de2e47a"
+        },
+        {
+          "relation": "depende_de",
+          "target_id": "9f2dfa2d-437f-47d8-95ae-360e0dc2344b"
+        },
+        {
+          "relation": "tem_conferência_registrada_em",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        },
+        {
+          "relation": "atende_ao",
+          "target_id": "f7aea95d-d562-40fb-b875-8676976869b7"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Tarefa de avaliação com contexto, entradas e critérios explícitos e congelados para uma observação comparável. Definir um caso não equivale a executá-lo nem a satisfazer seus critérios.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "8cb878cb-6bfb-43ff-90e3-e2348eee474f",
+      "module_id": "78c745cf-32f9-40a5-ac80-a323338eaefd",
+      "name": "Caso de avaliação",
+      "relations": [
+        {
+          "relation": "é_executado_em",
+          "target_id": "2e6cd3ac-b8bc-4d39-b1a0-d90a50a7f550"
+        },
+        {
+          "relation": "usa",
+          "target_id": "f7aea95d-d562-40fb-b875-8676976869b7"
+        },
+        {
+          "relation": "tem_versão_comprovada_por",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Registro de execução observada de casos contra uma revisão identificada, com resultados, custos, evidências e limites. Quando não houve execução, isso permanece explícito e métricas não observadas não se tornam resultados.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "2e6cd3ac-b8bc-4d39-b1a0-d90a50a7f550",
+      "module_id": "78c745cf-32f9-40a5-ac80-a323338eaefd",
+      "name": "Avaliação",
+      "relations": [
+        {
+          "relation": "observa",
+          "target_id": "e952a79d-b827-4446-a339-8e873de2e47a"
+        },
+        {
+          "relation": "executa",
+          "target_id": "8cb878cb-6bfb-43ff-90e3-e2348eee474f"
+        },
+        {
+          "relation": "produz",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        },
+        {
+          "relation": "sustenta",
+          "target_id": "62031be1-a10b-4f87-9033-3c5e4ad2498a"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Confronto contextual entre revisões, sustentado por necessidade, eliminatórios, evidências e resultados disponíveis. Expõe ganhos, perdas e incertezas sem transformar popularidade ou score isolado em autorização de adoção.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "62031be1-a10b-4f87-9033-3c5e4ad2498a",
+      "module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "name": "Comparação",
+      "relations": [
+        {
+          "relation": "confronta",
+          "target_id": "e952a79d-b827-4446-a339-8e873de2e47a"
+        },
+        {
+          "relation": "usa",
+          "target_id": "2e6cd3ac-b8bc-4d39-b1a0-d90a50a7f550"
+        },
+        {
+          "relation": "depende_do",
+          "target_id": "f7aea95d-d562-40fb-b875-8676976869b7"
+        },
+        {
+          "relation": "sustenta",
+          "target_id": "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Escolha atribuída com razões, escopo, evidências e autoridade identificada. Diferencia proposta, decisão explícita e autorização efetiva; uma escolha não concede por si só permissão irrestrita para produzir efeitos.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "882a93cf-8d72-4811-9067-d333ab0a5dfd",
+      "module_id": "1d93f2a4-3cf4-4806-b7d8-9fcb91d45324",
+      "name": "Decisão",
+      "relations": [
+        {
+          "relation": "considera",
+          "target_id": "62031be1-a10b-4f87-9033-3c5e4ad2498a"
+        },
+        {
+          "relation": "é_fundamentada_por",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        },
+        {
+          "relation": "pode_fundamentar",
+          "target_id": "9f2dfa2d-437f-47d8-95ae-360e0dc2344b"
+        },
+        {
+          "relation": "é_preservada_no",
+          "target_id": "f7aea95d-d562-40fb-b875-8676976869b7"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Conjunto selecionado e exato de arquivos com manifesto e hashes, preparado para revisão e eventual exposição autorizada. Sua identidade depende dos bytes; pareceres e autorizações não abrangem automaticamente alterações posteriores.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc",
+      "module_id": "3e23af05-2ffe-4ab7-8521-7233a0f2f81e",
+      "name": "Pacote selecionado",
+      "relations": [
+        {
+          "relation": "contém",
+          "target_id": "e952a79d-b827-4446-a339-8e873de2e47a"
+        },
+        {
+          "relation": "tem_verificação_em",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        },
+        {
+          "relation": "é_escopo_de",
+          "target_id": "9f2dfa2d-437f-47d8-95ae-360e0dc2344b"
+        },
+        {
+          "relation": "é_exposto_por",
+          "target_id": "a2bd89f7-2a1e-4653-a4ff-adc07170105c"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "engine",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Registro de efeito externo de exposição de um pacote exato em destino verificado, sob autorização aplicável. Preparação ou intenção de publicar não é publicação concluída; o resultado precisa de recibo e observação atribuída.",
+      "domain_id": "85b0bcbc-7d4f-406f-89d5-52f115cc7afe",
+      "id": "a2bd89f7-2a1e-4653-a4ff-adc07170105c",
+      "module_id": "3e23af05-2ffe-4ab7-8521-7233a0f2f81e",
+      "name": "Publicação",
+      "relations": [
+        {
+          "relation": "expõe",
+          "target_id": "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc"
+        },
+        {
+          "relation": "requer",
+          "target_id": "9f2dfa2d-437f-47d8-95ae-360e0dc2344b"
+        },
+        {
+          "relation": "é_comprovada_por",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        },
+        {
+          "relation": "é_registrada_no",
+          "target_id": "de1a6298-7289-4b82-b0eb-60114eaf943e"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "shared",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Observação atribuída que sustenta uma afirmação delimitada, com origem, escopo, instante e limites verificáveis. Pode demonstrar falha, recusa ou incerteza; escrever um relatório de sucesso não cria prova de execução.",
+      "domain_id": "b0694ea6-7bcc-420d-85f6-b595fc865aa6",
+      "id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c",
+      "module_id": "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29",
+      "name": "Evidência",
+      "relations": [
+        {
+          "relation": "sustenta",
+          "target_id": "2e6cd3ac-b8bc-4d39-b1a0-d90a50a7f550"
+        },
+        {
+          "relation": "fundamenta",
+          "target_id": "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+        },
+        {
+          "relation": "confere",
+          "target_id": "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc"
+        },
+        {
+          "relation": "documenta",
+          "target_id": "0b8b9744-bcf2-4c3d-b4b6-07b35daaa101"
+        },
+        {
+          "relation": "é_referida_no",
+          "target_id": "de1a6298-7289-4b82-b0eb-60114eaf943e"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "shared",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Conjunto mínimo de identidades, objetivo, fontes, restrições, decisões e divergências necessário para reconhecer e retomar o trabalho. Fontes recuperadas informam o contexto, sem conceder novas permissões ou apagar conflitos.",
+      "domain_id": "b0694ea6-7bcc-420d-85f6-b595fc865aa6",
+      "id": "f7aea95d-d562-40fb-b875-8676976869b7",
+      "module_id": "3918d1c0-217f-48c6-9cb1-761fdb78b8db",
+      "name": "Contexto de trabalho",
+      "relations": [
+        {
+          "relation": "preserva",
+          "target_id": "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+        },
+        {
+          "relation": "é_sustentado_por",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        },
+        {
+          "relation": "é_retomado_por",
+          "target_id": "de1a6298-7289-4b82-b0eb-60114eaf943e"
+        },
+        {
+          "relation": "delimita",
+          "target_id": "8cb878cb-6bfb-43ff-90e3-e2348eee474f"
+        },
+        {
+          "relation": "contém_limites_de",
+          "target_id": "9f2dfa2d-437f-47d8-95ae-360e0dc2344b"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "shared",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Estado durável e verificável da execução, com posição atual, último passo concluído, próxima ação, artefatos, evidências e bloqueios. Permite retomar sem repetir efeitos externos cujo resultado já foi confirmado.",
+      "domain_id": "b0694ea6-7bcc-420d-85f6-b595fc865aa6",
+      "id": "de1a6298-7289-4b82-b0eb-60114eaf943e",
+      "module_id": "3918d1c0-217f-48c6-9cb1-761fdb78b8db",
+      "name": "Checkpoint",
+      "relations": [
+        {
+          "relation": "retoma",
+          "target_id": "f7aea95d-d562-40fb-b875-8676976869b7"
+        },
+        {
+          "relation": "referencia",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        },
+        {
+          "relation": "registra",
+          "target_id": "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+        },
+        {
+          "relation": "preserva_recibo_de",
+          "target_id": "a2bd89f7-2a1e-4653-a4ff-adc07170105c"
+        },
+        {
+          "relation": "observa_limites_de",
+          "target_id": "9f2dfa2d-437f-47d8-95ae-360e0dc2344b"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    },
+    {
+      "collection": "shared",
+      "created_at": "2026-10-23T01:26:23.987937+00:00",
+      "definition": "Permissão atribuída a fonte efetiva para uma ação delimitada, com recursos, escopo, condições e validade. Deve corresponder à revisão ou pacote quando isso afeta o efeito; não se deduz de instalação, recomendação ou histórico.",
+      "domain_id": "b0694ea6-7bcc-420d-85f6-b595fc865aa6",
+      "id": "9f2dfa2d-437f-47d8-95ae-360e0dc2344b",
+      "module_id": "5c133e8a-df5a-4bf1-9e5d-b8cb42063c29",
+      "name": "Autorização",
+      "relations": [
+        {
+          "relation": "pode_decorrer_de",
+          "target_id": "882a93cf-8d72-4811-9067-d333ab0a5dfd"
+        },
+        {
+          "relation": "delimita",
+          "target_id": "0b8b9744-bcf2-4c3d-b4b6-07b35daaa101"
+        },
+        {
+          "relation": "delimita",
+          "target_id": "a2bd89f7-2a1e-4653-a4ff-adc07170105c"
+        },
+        {
+          "relation": "vincula",
+          "target_id": "7d929b0a-e83b-466a-bbbb-fa33ea8f8ffc"
+        },
+        {
+          "relation": "é_comprovada_por",
+          "target_id": "9069df1e-5e25-4ef3-8d0e-fb3ebc2f343c"
+        }
+      ],
+      "revision": 1,
+      "schema_version": "1.0",
+      "type": "object",
+      "updated_at": "2026-10-23T01:26:23.987937+00:00",
+      "visibility": "candidate_public"
+    }
+  ],
+  "projection_version": "1.0",
+  "revision": 1,
+  "schema_version": "1.0",
+  "scope": "Selected engine concepts and shared supporting concepts only. No domain skill implementation is included.",
+  "type": "public_model",
+  "updated_at": "2026-10-23T01:26:23.987937+00:00",
+  "visibility": "candidate_public",
+  "owner": "enayzuin",
+  "license": "MIT",
+  "distribution_version": "0.1.1",
+  "repository_url": "https://github.com/enayzuin/zuuuin-skills",
+  "site_url": "https://enayzuin.github.io/zuuuin-skills/"
+}

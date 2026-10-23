@@ -1,0 +1,21 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Zuuuin Skills · Zuuuin Skills 0.1.1</title><link rel="stylesheet" href="../../../site-style.css"><link rel="alternate" type="text/markdown" href="runtime.md"><link rel="describedby" href="../../../llms.txt"><link rel="canonical" href="https://enayzuin.github.io/zuuuin-skills/skills/zuuuin-skill-author/references/runtime.html"></head><body><main><header><p>Zuuuin Skills 0.1.1 · runtime 0.1.1 · prévia local</p><nav aria-label="Navegação"><a href="../../../index.html">Início</a><a href="../../../docs/index.html">Skills</a><a href="../../../docs/installation.html">Instalação</a><a href="../../../docs/site.html">Site e limites</a><a href="../../../LICENSE-STATUS.html">Direitos</a></nav></header><p>O runtime zuuuin_engine acompanha a distribuição do motor como artefato local separado, construído do pyproject.toml fornecido. Não resolver esse nome em registries públicos. Em laboratório, execute com PYTHONPATH apontando para a pasta runtime da fonte aprovada; na distribuição, use o wheel local aprovado com pip --no-index --no-deps. Nunca referenciar um arquivo do repositório pai como se o instalador da skill o entregasse. Se o runtime não estiver disponível, parar com dependency_missing. Operações retornam JSON e erros explícitos; modos de simulação não efetuam escrita externa. O CLI não consulta contas sozinho.</p>
+<p>Requer POSIX (macOS/Linux): o runtime usa flock/fcntl e O_NOFOLLOW. Sua instalação deve ser verificada no cliente-alvo.</p>
+<p>Esta revisão do motor requer o runtime local Zuuuin Engine 0.1.1, construído da fonte entregue.</p>
+<h2 id="licença-do-conteúdo-desta-unidade">Licença do conteúdo desta unidade</h2>
+<p>MIT License</p>
+<p>Copyright (c) 2026 enayzuin</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy</p>
+<p>of this software and associated documentation files (the &quot;Software&quot;), to deal</p>
+<p>in the Software without restriction, including without limitation the rights</p>
+<p>to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</p>
+<p>copies of the Software, and to permit persons to whom the Software is</p>
+<p>furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all</p>
+<p>copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</p>
+<p>IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</p>
+<p>FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</p>
+<p>AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</p>
+<p>LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</p>
+<p>OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</p>
+<p>SOFTWARE.</p><footer>Conteúdo próprio de enayzuin sob MIT. Prévia local com indexação desabilitada. Nenhum envio ou hospedagem foi executado por este gerador.</footer></main></body></html>
