@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "source_ref": "synthetic:documentation-example",
+      "authorized": true,
+      "complete": true,
+      "status": "success",
+      "projects": [
+        {
+          "canonical_key": "demo.documentation",
+          "name": "Projeto demonstrativo",
+          "objective": "Organizar requisitos observáveis.",
+          "status": "active",
+          "needs": [
+            {
+              "canonical_key": "reviewable-requirements",
+              "input": "Nota demonstrativa autorizada.",
+              "desired_output": "Uma lista de requisitos revisáveis.",
+              "success_criteria": [
+                "Cada requisito informa uma saída e um critério de aceite."
+              ],
+              "constraints": [],
+              "priority": null,
+              "frequency": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

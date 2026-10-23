@@ -1,0 +1,32 @@
+{
+  "roots": [
+    "."
+  ],
+  "available_tools": [],
+  "model_links": {
+    "zuuuin-project-skill-map": [
+      "23f6f714-9ca8-40c4-8c2b-85432376c4d7"
+    ],
+    "zuuuin-publication-audit": [
+      "99c2045c-ad0b-4a4c-ac22-6532b1df90c3"
+    ],
+    "zuuuin-skill-author": [
+      "9032b66e-56f1-4a51-bd4b-8e5d5ccccd0d"
+    ],
+    "zuuuin-skill-catalog": [
+      "c1003b8d-a857-421a-be24-143a4bc297d0"
+    ],
+    "zuuuin-skill-compare": [
+      "25f3bcff-d07b-43b3-9217-bf6af16b904f"
+    ],
+    "zuuuin-skill-evaluate": [
+      "9c161232-89d9-4995-941e-bc24687ffcb7"
+    ],
+    "zuuuin-skill-publish": [
+      "e68f24ed-d351-422c-b35b-979485308332"
+    ],
+    "zuuuin-skill-router": [
+      "76ff1fa6-245b-46ac-9594-d765d493f695"
+    ]
+  }
+}

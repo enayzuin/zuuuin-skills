@@ -1,0 +1,21 @@
+{
+  "operation": "audit",
+  "status": "review_required",
+  "findings": [],
+  "limitations": [
+    {
+      "path": "package",
+      "reason": "Independent contextual review bound to current digest required"
+    },
+    {
+      "path": "package",
+      "reason": "Authorship/redistribution eligibility unconfirmed"
+    }
+  ],
+  "history_coverage": {
+    "applicable": false,
+    "complete": true
+  },
+  "reviewed_by": null,
+  "exposure_performed": false
+}

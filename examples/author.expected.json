@@ -1,0 +1,6 @@
+{
+  "operation": "author",
+  "status": "no_candidate_needed",
+  "reason": "Existing method or no justified reusable gap",
+  "changes_applied": false
+}

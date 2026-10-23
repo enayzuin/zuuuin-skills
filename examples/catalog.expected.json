@@ -1,0 +1,12 @@
+{
+  "operation": "catalog",
+  "status": "cataloged",
+  "coverage": {
+    "complete": true,
+    "root_count": 1
+  },
+  "errors": [],
+  "conflicts": [],
+  "symlinks": [],
+  "mutations": []
+}

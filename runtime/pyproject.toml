@@ -1,0 +1,18 @@
+[build-system]
+requires = []
+build-backend = "zuuuin_build"
+backend-path = ["."]
+
+[project]
+name = "zuuuin-engine"
+version = "0.1.1"
+description = "Local supervised Zuuuin engine runtime"
+requires-python = ">=3.10"
+authors = [{name = "enayzuin", email = "42486373+enayzuin@users.noreply.github.com"}]
+license = "MIT"
+license-files = ["LICENSE"]
+classifiers = ["Operating System :: POSIX", "Programming Language :: Python :: 3"]
+
+[project.urls]
+Source = "https://github.com/enayzuin/zuuuin-skills"
+Documentation = "https://enayzuin.github.io/zuuuin-skills/"

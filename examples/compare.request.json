@@ -1,0 +1,19 @@
+{
+  "need_id": "ea3f3a82-5cd1-45ec-9519-5f9c102dacd8",
+  "context_key": "synthetic-example:compare-empty:v1",
+  "criteria": [
+    "efficacy",
+    "fit",
+    "integration",
+    "efficiency",
+    "maintenance"
+  ],
+  "local": {
+    "revision_id": "7c81c919-1f7b-44b1-b2c7-aafa470d56eb",
+    "eligible": true,
+    "mandatory_passed": true,
+    "comparable": false,
+    "measurements": {}
+  },
+  "candidates": []
+}
